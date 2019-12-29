@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 
 CONFIG_DIR="$HOME/.config"
-REPO_DIR="$HOME/config/"
-
-if [ -d "$CONFIG_DIR" ]; then
-    rm "$CONFIG_DIR"
-fi
+I3_DIR="$HOME/.config/i3"
+REPO_DIR="$HOME/config"
 
 mkdir -p "$CONFIG_DIR"
-
-ln -s "$REPO_DIR" "$CONFIG_DIR"
+mkdir -p "$I3_DIR"
+cp -r "$REPO_DIR/i3/*" "$I3_DIR"
