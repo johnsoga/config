@@ -3,7 +3,7 @@
 CONFIG_DIR="$HOME/.config"
 REPO_DIR="$HOME/config/"
 
-if [ -d "$CONFIG_DIR"]; then
+if [ -d "$CONFIG_DIR" ]; then
     rm "$CONFIG_DIR"
 fi
 
