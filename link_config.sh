@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
-mkdir -p /home/johnsoga/.config
+CONFIG_DIR="$HOME/.config"
+REPO_DIR="$HOME/config/"
 
-ln -s "$HOME/config/*" /home/johnsoga/.config
+if [ -d "$CONFIG_DIR"]; then
+    rm "$CONFIG_DIR"
+fi
+
+mkdir -p "$CONFIG_DIR"
+
+ln -s "$REPO_DIR" "$CONFIG_DIR"
