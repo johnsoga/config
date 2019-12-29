@@ -1,0 +1,26 @@
+set $mod Mod1
+
+font pango:monospace 10
+
+bindsym $mod+Return exec lxterminal
+bindsym $mod+Shift+q kill
+bindsym $mod+d exec dmenu_run
+
+bindsym $mod+h split h
+bindsym $mod+v split v
+bindsym $mod+f fullscreen toggle
+
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+
+#logout
+bindsym $mod+Shift+e exit
+
+#status bar
+bar {
+    status_command i3status
+}
+
+exec --no-startup-id feh --bg-scale /home/johnsoga/Pictures/pic.jpg
+exec --no-startup-id vmware-user-suid-wrapper
