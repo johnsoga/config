@@ -22,5 +22,6 @@ bar {
     status_command i3status
 }
 
+exec --no-startup-id compton 
 exec --no-startup-id feh --bg-scale /home/johnsoga/Pictures/pic.jpg
 exec --no-startup-id vmware-user-suid-wrapper
