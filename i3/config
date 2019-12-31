@@ -14,6 +14,10 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
+#workspaces
+bindsym $mod+left workspace prev
+bindsym $mod+right workspace next
+
 #logout
 bindsym $mod+Shift+e exit
 
@@ -22,6 +26,6 @@ bar {
     status_command i3status
 }
 
-exec --no-startup-id compton 
+exec --no-startup-id compton --config /home/johnsoga/.config/compton.conf
 exec --no-startup-id feh --bg-scale /home/johnsoga/Pictures/pic.jpg
 exec --no-startup-id vmware-user-suid-wrapper
