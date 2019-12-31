@@ -15,8 +15,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 #workspaces
-bindsym $mod+left workspace prev
-bindsym $mod+right workspace next
+bindsym $mod+Left workspace prev
+bindsym $mod+Right workspace next
 
 #logout
 bindsym $mod+Shift+e exit
