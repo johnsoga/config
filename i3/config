@@ -28,6 +28,20 @@ bar {
     status_command i3status
 }
 
+# Resize
+mode "resize" {
+        # arrow keys
+        bindsym Left    resize shrink   width   10 px or 4 ppt
+        bindsym Down    resize grow     height  10 px or 4 ppt
+        bindsym Up      resize shrink   height  10 px or 4 ppt
+        bindsym Right   resize grow     width   10 px or 4 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
 exec --no-startup-id compton --config /home/johnsoga/.config/compton.conf
 exec --no-startup-id feh --bg-scale /home/johnsoga/Pictures/pic.jpg
 exec --no-startup-id vmware-user-suid-wrapper
